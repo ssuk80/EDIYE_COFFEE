@@ -99,12 +99,20 @@ header .topmenu .search input {
   height: 28px;
   background-color: #243C84;
   border-radius: 5px;
-  color:#fff
+  color:#fff;
+  transition:width .4s;
+
+}
+
+header .topmenu .search input::placeholder {
+  color:#e2e2e2;
+  
 }
 
 header .topmenu .search input:focus {
   width: 190px;
-
+  color:#e2e2e2;
+  padding-left:10px;
 }
 
 
@@ -116,6 +124,7 @@ header .topmenu .search .material-icons {
   color:#fff;
   height: 24px;
   margin: auto 0;
+  transition: .4s;
 }
 
 header h1  {

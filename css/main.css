@@ -33,13 +33,28 @@ header {
   position: relative;
   /* width: 1100px; */
   margin:0 auto;
-  
 
 }
 
 header > .inner {
   height: 150px;
 }
+header .sns {
+ position: absolute;
+ background-color: #243C84;
+ padding:5px 10px;
+ left:0;
+ 
+}
+
+header .inner .sns ul {
+  display: flex;
+}
+
+header .inner .sns li a img { 
+  width: 28px;
+  height: 28px;
+  margin-right:10px;}
 
 header .topmenu  {
   display: flex;
@@ -148,7 +163,6 @@ header .mainmenu {
   right: 0;
   z-index: 1;
   margin: 0 auto;
-  position: absolute;
 }
 
 header .mainmenu .item a.item__name {
@@ -160,17 +174,16 @@ header .mainmenu .item a.item__name {
   
 }
 
-header .mainmenu .item a.item__name:hover {
+header .mainmenu .item:hover a.item__name {
   color: #fff;
   border-radius: 3px 3px 0 0;
   background-color: #243C84;
-  
 }
 
 header .mainmenu .item .item__contents {
   width: 100%;
   position: fixed;
-  left:0;
+  left: 0;
   display: none;
 }
 
@@ -182,12 +195,49 @@ header .mainmenu .item .item__contents .contents__menu {
   position: relative;
 }
 
+
 header .mainmenu .item .item__contents .contents__menu > ul.inner {
   box-sizing: border-box;
   width: 883px;
-  padding:20px 30px;
+  padding:20px 20px;
   background-color: #243C84;
   border-radius: 0 0 10px 10px;
+}
+
+/* 2번째 소메뉴 열리는 얘들 */
+header .mainmenu .item .item__contents .contents__menu > ul li {
+  /* background-color: #333; */
+}
+header .mainmenu .item .item__contents .contents__menu > ul.menu_1 li {
+  margin-left: 0px;
+}
+header .mainmenu .item .item__contents .contents__menu > ul.menu_2 li {
+  margin-left: 100px;
+}
+header .mainmenu .item .item__contents .contents__menu > ul.menu_3 li {
+  margin-left: 190px;
+}
+
+header .mainmenu .item .item__contents .contents__menu > ul.menu_4 li {
+  margin-left: 310px;
+}
+
+header .mainmenu .item .item__contents .contents__menu > ul.menu_5 li {
+  margin-left: 465px;
+}
+
+header .mainmenu .item .item__contents .contents__menu > ul.menu_6 li {
+  margin-left: 635px;
+}
+header .mainmenu .item .item__contents .contents__menu > ul.menu_7 li {
+  margin-left: 620px;
+  text-align: right;
+
+}
+
+
+header .mainmenu .item .item__contents .contents__menu > ul.menu_1 {
+  padding-left: 20px;
 }
 
 header .mainmenu .item .item__contents .contents__menu > ul > li {
@@ -201,4 +251,20 @@ header .mainmenu .item .item__contents .contents__menu > ul > li {
 header .mainmenu .item .item__contents .contents__menu > ul > li:hover {
   color:#fff;
   cursor: pointer;
+}
+
+header .badges {
+  position: absolute;
+  width:120px;
+  top:200px;
+  right: 20px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+header .badges a img {
+  width:120px;
+  height: 200px;
+
 }

@@ -262,9 +262,6 @@ header .mainmenu .item .item__contents .contents__menu > ul.inner {
 }
 
 /* 2번째 소메뉴 열리는 얘들 */
-header .mainmenu .item .item__contents .contents__menu > ul li {
-  /* background-color: #333; */
-}
 header .mainmenu .item .item__contents .contents__menu > ul.menu_1 li {
   margin-left: 0px;
 }
@@ -381,6 +378,10 @@ header .badges a img {
   position: absolute;
   bottom: 0;
   left: 345px;
+}
+
+.visual .fade-in {
+  opacity: 0;
 }
 
 

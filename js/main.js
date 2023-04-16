@@ -60,7 +60,7 @@ fadeEls.forEach(function (fadeEl, index) {
     // delay: 몇 초 뒤에 실행될 것인가?
     delay: (index + 1) * 0.7, // 0.7, 1.4, 2.1, 2.8
     opacity: 1
-  });
+  }); 
 });
 
 

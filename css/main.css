@@ -20,6 +20,63 @@ img {
   display: block;
 }
 
+.btn { 
+  display: block; /*a, span같은 인라인 요소를 버튼으로 사용 할 수 있으니 미리 블럭으로 지정 */
+  width: 130px;
+  padding: 10px;
+  border:2px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--darkblue {
+  color: #c5c9f0;
+  background-color: #243C84;
+  border-color: #120f62;
+}
+.btn.btn--darkblue:hover {
+  color: #fff;
+  background-color: #090731;
+}
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--gold {
+  color: #d9aa8a;
+  border-color: #d9aa8a;
+}
+.btn.btn--gold:hover {
+  color: #fff;
+  background-color: #d9aa8a;
+}
+.btn.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+
+
+
+
+
 
 header {
   background-color: #fff;
@@ -27,21 +84,22 @@ header {
   border-bottom:1px solid #888;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .15);
   position: fixed;
+  z-index: 1;
 }
 
 .inner {
   position: relative;
-  /* width: 1100px; */
+  width: 1100px;
   margin:0 auto;
-
 }
 
 header > .inner {
   height: 150px;
 }
+
 header .sns {
  position: absolute;
- background-color: #243C84;
+ /* background-color: #243C84; */
  padding:5px 10px;
  left:0;
  
@@ -54,14 +112,13 @@ header .inner .sns ul {
 header .inner .sns li a img { 
   width: 28px;
   height: 28px;
-  margin-right:10px;}
+  margin-right: 10px;}
 
 header .topmenu  {
   display: flex;
   position: absolute;
   top: 5px;
   right:20px;
-  color:#333;
 }
 
 header .topmenu ul.topmenu__list {
@@ -267,7 +324,163 @@ header .badges a img {
   width:120px;
   height: 200px;
 }
-
-section .visual {
+/* visual */
+.visual {
+  position: relative;
+  box-sizing: border-box;
+  padding-top:150px ;
   background-image: url('../images/visual_imgbg.jpg');
+  height:620px;
+  background-position: center;
+  
+}
+.visual > .inner {
+  height:490px;
+}
+
+.visual .title {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  
+}
+.visual .title img {
+  width: 300px;
+}
+
+.visual .title .btn {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
+
+.cup1.image {
+  position: absolute;
+  width: 210px;
+  bottom: -10px;
+  right: -10px;
+}
+.visual .cup1.text {
+  position: absolute;
+  top: 38px;
+  right: 171px;
+}
+
+.visual .cup2.image {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 152px;
+}
+.visual .cup2.text {
+  position: absolute;
+  top: 120px;
+  right: 350px;
+}
+.visual .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 345px;
+}
+
+
+/* notice */
+.notice {
+  position: relative;
+}
+
+
+.notice .bg-left {
+  position: absolute;
+  width:50%;
+  height: 100%;
+  background-color: #243C84;
+  top:0;
+  left:0;
+
+}
+
+.notice .bg-right {
+  position: absolute;
+  width:50%;
+  height: 100%;
+  background-color: #f6f5ef;
+  top:0;
+  right:0;
+}
+
+.notice .inner {
+  height: 62px;
+  display: flex;
+}
+
+.notice .inner__left h2 {
+  color:#fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+  align-items: center;
+}
+.notice .inner__left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: #243C84;
+}
+
+.notice .inner__left .swiper {
+  height: 62px;
+  flex-grow:1;
+}
+
+.notice .inner__left .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+.notice .inner__left .swiper .swiper-slide a {
+  color: #fff;
+}
+
+.notice .inner__left a {
+  color: #fff;
+}
+
+.notice .inner__left .notice-more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.notice .inner__left .notice-more .material-icons {
+  color:#fff;
+  font-size: 30px;
+}
+
+.notice .inner__right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notice .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.notice .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notice .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
 }

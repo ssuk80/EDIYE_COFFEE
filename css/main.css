@@ -24,7 +24,7 @@ img {
   display: block; /*a, span같은 인라인 요소를 버튼으로 사용 할 수 있으니 미리 블럭으로 지정 */
   width: 130px;
   padding: 10px;
-  border:2px solid #333;
+  border:1px solid #333;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
@@ -395,7 +395,7 @@ header .badges a img {
   position: absolute;
   width:50%;
   height: 100%;
-  background-color: #243C84;
+  background-color: #090731;
   top:0;
   left:0;
 
@@ -426,7 +426,7 @@ header .badges a img {
   width: 70%;
   display: flex;
   align-items: center;
-  background-color: #243C84;
+  background-color: #090731;
 }
 
 .notice .inner__left .swiper {
@@ -485,3 +485,82 @@ header .badges a img {
 .notice .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
 }
+
+
+
+/* dream_factory */
+.dream_factory {
+  box-sizing: border-box;
+  width:100%;
+  background: url("../images/dream_factory_bg.gif") repeat-y;
+  /* background-color: #243C84; */
+  margin: 0 auto;
+  height:350px;
+  
+}
+
+.dream_factory h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  color:#fff;
+  padding-top: 50px;
+  
+
+}
+
+.dream_factory p {
+  padding-top: 30px;
+  font-size: 15px;
+  color:#fff;
+}
+
+.dream_factory > .inner {
+  position: relative;
+  height:350px;
+  overflow: hidden;
+}
+
+.dream_factory__btn  { 
+  display: flex;
+  padding-top: 40px;
+}
+
+.dream_factory__btn a {
+  margin-right: 10px;
+}
+
+.image_dreamfactory img {
+position: absolute;
+right:-130px;
+bottom:0;
+}
+
+
+/* youtube */
+.youtube {
+  margin-top: 1px;
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  position: relative;
+  }
+
+
+.youtube .youtube__area {
+  /* 유튜브 표준영상비율 16:9  */
+  width: 1920px;
+  height: 1000PX;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: calc(1920px / -2);
+  margin-top: calc(1000px / -2); 
+
+
+}
+
+#player {
+  width:100%;
+  height: 100%;
+  }

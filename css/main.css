@@ -84,7 +84,7 @@ header {
   border-bottom:1px solid #888;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .15);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .inner {
@@ -259,6 +259,7 @@ header .mainmenu .item .item__contents .contents__menu > ul.inner {
   padding:20px 20px;
   background-color: #243C84;
   border-radius: 0 0 10px 10px;
+  z-index: 1;
 }
 
 /* 2번째 소메뉴 열리는 얘들 */
@@ -369,11 +370,13 @@ header .badges a img {
   bottom: 0;
   right: 152px;
 }
+
 .visual .cup2.text {
   position: absolute;
   top: 120px;
-  right: 350px;
+  right: 310px;
 }
+
 .visual .spoon {
   position: absolute;
   bottom: 0;
@@ -492,7 +495,7 @@ header .badges a img {
 .dream_factory {
   box-sizing: border-box;
   width:100%;
-  background: url("../images/dream_factory_bg.gif") repeat-y;
+  background: url("../images/dream_factory_bg.gif") repeat-y #07529f ;
   /* background-color: #243C84; */
   margin: 0 auto;
   height:350px;
@@ -541,23 +544,21 @@ bottom:0;
 .youtube {
   margin-top: 1px;
   position: relative;
-  height: 700px;
-  background-color: #333;
+  height: 400px;
+  background-color: #090731;
   position: relative;
   }
 
 
 .youtube .youtube__area {
   /* 유튜브 표준영상비율 16:9  */
-  width: 1920px;
-  height: 1000PX;
+  width: 860px;
+  height: 400PX;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: calc(1920px / -2);
-  margin-top: calc(1000px / -2); 
-
-
+  margin-left: calc(860px / -2);
+  margin-top: calc(400px / -2); 
 }
 
 #player {
